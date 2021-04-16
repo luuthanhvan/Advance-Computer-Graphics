@@ -2,6 +2,11 @@
 Reference: https://www.youtube.com/watch?v=exQ43PFWJBU
 */
 
+/* 
+Compile: gcc -o output/simple_3d_modeling simple_3d_modeling.c -lGL -lGLU -lglut
+Run: ./output/simple_3d_modeling
+*/
+
 #include <GL/glut.h>
 
 int cx = 0, cy = 0, cz = 0;

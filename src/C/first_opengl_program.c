@@ -2,6 +2,11 @@
 Reference: https://www.youtube.com/watch?v=-j53hpiEUCc
 */
 
+/*
+Compile: gcc -o output/first_opengl_program first_opengl_program.c -lGL -lGLU -lglut
+Run: ./output/first_opengl_program
+*/
+
 #include <GL/glut.h>
 
 void drawChessBoard(int left, int top, int size){
