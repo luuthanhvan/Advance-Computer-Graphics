@@ -11,12 +11,15 @@
             # install python3
             sudo apt-get -y install python3-pip
             
-            # install PyOpenGL and PyGame
+            # install PyOpenGL and some support libraries
             sudo apt-get update
             pip3 install pyopengl
             pip3 install pyopengl_accelerate
             pip3 install numpy
             pip3 install pygame
+            pip3 install Pillow # Python imaging library using for loading texture for texturing
+            pip3 install glfw # for creating and managing windows and OpenGL contexts
+            pip3 install pyrr # 3D mathematical function using Numpy
 
 # Running
 - C
@@ -28,5 +31,5 @@
 
 - Python:
 
-            cd src/Python
-            python3 cube_model_1.py # running
+            cd src/Python/project
+            python run.py # running
