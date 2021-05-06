@@ -1,2 +1,4 @@
 https://www3.ntu.edu.sg/home/ehchua/programming/opengl/CG_BasicsTheory.html
 https://viblo.asia/p/tim-hieu-ve-opengl-13-ZjleallxGqJ
+PyOpenGL web: http://pyopengl.sourceforge.net/
+glfw web: https://www.glfw.org/
