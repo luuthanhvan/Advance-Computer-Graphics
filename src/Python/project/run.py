@@ -165,6 +165,9 @@
 
 import glfw
 from Button import Button
+# from Text import Text
+import freetype as ft
+# from Car import Car
 
 button_vertices_1 = {
     'top_left': [-0.9, 0.9],
@@ -182,7 +185,7 @@ def mouse_button_callback(window, button, action, mods):
 def main():
     if not glfw.init():
         raise Exception("glfw can not be initialized")
-            
+
     # creating the window: create_window(width, height, title)
     window = glfw.create_window(900, 700, "Main Window", None, None)
 
@@ -196,7 +199,7 @@ def main():
 
     # make the context current
     glfw.make_context_current(window)
-
+    
     # the main application loop
     while not glfw.window_should_close(window):
         glfw.poll_events()
@@ -204,6 +207,8 @@ def main():
         # display buttons
         button = Button(button_vertices_1, {'r': 0.0, 'g': 0.8, 'b': 1.0})
         button.draw()
+        
+        # display text
         
         # display objects
 
