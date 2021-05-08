@@ -20,7 +20,6 @@ def load_texture(path, texture):
     glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, image.width, image.height, 0, GL_RGBA, GL_UNSIGNED_BYTE, img_data)
     return texture
 
-
 # for use with pygame
 def load_texture_pygame(path, texture):
     import pygame
