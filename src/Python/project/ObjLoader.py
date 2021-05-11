@@ -3,10 +3,10 @@ import numpy as np
 class ObjLoader:
     buffer = []
 
-    @staticmethod
+    @staticmethod   #search data in obj file
     def search_data(data_values, coordinates, skip, data_type):
         for d in data_values:
-            if d == skip:
+            if d == skip: #Bo qua cac ky tu v vt vn chi lay so
                 continue
             if data_type == 'float':
                 coordinates.append(float(d))

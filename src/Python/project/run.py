@@ -65,7 +65,7 @@ def main():
     glfw.make_context_current(window)
     
     # load here the 3d meshes
-    chibi_indices, chibi_buffer = ObjLoader.load_model("meshes/chibi.obj", False)
+    chibi_indices, chibi_buffer = ObjLoader.load_model("meshes/Final_model/table.obj", False)
 
     shader = compileProgram(compileShader(vertex_src, GL_VERTEX_SHADER), compileShader(fragment_src, GL_FRAGMENT_SHADER))
 
@@ -94,7 +94,7 @@ def main():
     glEnableVertexAttribArray(2)
 
     textures = glGenTextures(2)
-    load_texture("meshes/chibi.png", textures[0])
+    load_texture("meshes/pillow.jpg", textures[0])
     # load_texture("meshes/monkey.jpg", textures[1])
 
     glUseProgram(shader)
